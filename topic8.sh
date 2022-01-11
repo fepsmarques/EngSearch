@@ -17,12 +17,13 @@ echo -e "Horario \t Data \t Hostname \t IP \t Server Version" > $result
 #Loop to get information for each server 
 for server in $servers
 do
-	#Jogando as informações do servidor em variaveis
+	#Setting variables to get info
 	time=`ssh myuser@${server} "date "+%T""`
 	date=`ssh myuser@${server} "date +"%d/%m/%y""`
 	hostname=`ssh myuser@${server} "hostname"`
 	ip=`ssh myuser@${server} "hostname -i"`
 	kernel=`ssh myuser@${server} "uname -r"`
-
+	
+	#Sending info to result file
 	echo -e "$time \t $date \t $hostname \t $ip \t $kernel" >> $result
 done
