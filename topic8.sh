@@ -1,4 +1,7 @@
 #!/bin/bash
+###########################quick usage guide###########################
+#create a file called myservers_list.txt in the same directory, add the server list and save it. 
+
 #Variable to get reference file
 serverlist='myservers_list.txt'
 
