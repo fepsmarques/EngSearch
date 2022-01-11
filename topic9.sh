@@ -1,4 +1,8 @@
 #!/bin/bash
+
+################Quick Usage Guide################
+#Create a file control_file.txt in the same location of the script with the lines which needs to be verified, run the script
+
 serverlist='control_file.txt'
 
 #we write in variable all the content just to display on echo
